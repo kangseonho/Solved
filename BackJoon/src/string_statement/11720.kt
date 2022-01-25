@@ -11,6 +11,5 @@ fun main(args: Array<String>) = with(System.`in`) {
     for (i in 0 until N) {
         result += string.get(i).toString().toInt()
     }
-
     println(result)
 }
