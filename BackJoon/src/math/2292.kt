@@ -5,12 +5,16 @@ package math
 
 fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     val N = readLine().toInt()
-    var n = 0
-    var i = 0
+    var n = 1
+    var i = 1
 
-    while (N > i) {
-        i = (n*n+n)/2 * 6
-        n++
+    if (N == 0) {
+        println(0)
+    } else {
+        while (N > i) {
+            i = (n*n+n)/2 * 6 + 1
+            n++
+        }
+        print(n)
     }
-    print(n)
 }
