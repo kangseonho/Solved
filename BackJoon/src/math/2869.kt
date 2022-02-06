@@ -6,15 +6,9 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     val B = input[1].toLong()
     val V = input[2].toLong()
 
-    if (V%A > 1) {
-        print("asdf")
-        println(V/A+(V/A)*B)
+    if ((V-B)%(A-B) == 0L) {
+        println((V-B)/(A-B))
     } else {
-        print("asd")
-        println(V/A-(V/A)*B)
+        println((V-B)/(A-B)+1)
     }
-
-//    if (6%5 >= 1) {
-//        println(6/5+(6/5) * 1)
-//    }
 }
